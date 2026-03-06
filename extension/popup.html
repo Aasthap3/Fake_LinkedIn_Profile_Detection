@@ -6,11 +6,40 @@
 </head>
 <body>
 
-<h2>Fake Profile Detector</h2>
+<div class="container">
+  <div class="header">
+    <div class="icon">&#128270;</div>
+    <h1>Profile Authenticator</h1>
+    <p class="subtitle">AI-Powered LinkedIn Profile Analysis</p>
+  </div>
 
-<button id="analyzeBtn">Analyze Profile</button>
+  <button id="analyzeBtn" class="analyze-btn">
+    <span class="btn-icon">&#9654;</span>
+    <span class="btn-text">Analyze Profile</span>
+  </button>
 
-<div id="result"></div>
+  <div id="result" class="result-container hidden">
+    <div class="result-header">
+      <span class="result-icon"></span>
+      <span class="result-label"></span>
+    </div>
+    <div class="confidence-bar">
+      <div class="confidence-fill"></div>
+    </div>
+    <div class="confidence-text"></div>
+    <div class="result-footer">Analysis Complete</div>
+  </div>
+
+  <div id="loading" class="loading-container hidden">
+    <div class="spinner"></div>
+    <p>Analyzing profile...</p>
+  </div>
+
+  <div class="footer">
+    <span class="status-indicator"></span>
+    <span class="status-text">Ready</span>
+  </div>
+</div>
 
 <script src="popup.js"></script>
 
